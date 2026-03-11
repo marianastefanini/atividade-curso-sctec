@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio simples de programação">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio | Mariana</title>
+</head>
+
+<body>
+    <header class="topo">
+        <div class="container menu">
+            <a class="logo" href="#sobremim">Bem-vindo!</a>
+            <nav aria-label="Navegação principal">
+                <ul class="menu-links">
+                    <li><a href="#sobremim">Sobre mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobremim" class="bloco container">
+            <div class="sobre-conteudo">
+                <div class="sobre-texto">
+                    <h1 style="font-size:40px;">Olá, eu sou a Mariana!</h1>
+                    <p><b>Social Media e Estudante de Programação </b></p>
+                    <br>
+                    <p> Sou profissional da área de comunicação, com experiência em estratégia digital. Atualmente,
+                        estou expandindo minha atuação por meio dos estudos em desenvolvimento front-end, com o objetivo
+                        de criar soluções que unam planejamento, estética e funcionalidade.</p>
+                    <button><a href="#contato">Entre em contato</a></button>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="assets/imagem1.png" alt="ilustração">
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="bloco container">
+            <h2>Habilidades e Competências</h2>
+            <div class="habilidades">
+                <ul class="lista-habilidades">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript (básico)</li>
+                    <li>Estruturação semântica</li>
+                </ul>
+
+                <ul class="lista-habilidades">
+                    <li>Branding</li>
+                    <li>Posicionamento de marca</li>
+                    <li>Estratégia de Conteúdo</li>
+                    <li>Gestão de mídias sociais</li>
+                </ul>
+
+                <ul class="lista-habilidades">
+                    <li>Design (Adobe, Figma, Canva)</li>
+                    <li>Copyright</li>
+                    <li>Edição de vídeo</li>
+                    <li>SEO</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projetos" class="bloco container">
+            <h2>Projetos Desenvolvidos</h2>
+            <p>Os projetos apresentados a seguir são fictícios e foram desenvolvidos com fins demonstrativos.</p> <br>
+
+            <div class="grade-projetos">
+                <article class="card-projeto">
+                    <img src="assets/exemplo1.png" alt="Exemplo Portfolio">
+                    <div class="card-conteudo">
+                        <h3>Landing Page Portfólio Pessoal</h3><br>
+                        <p>Desenvolvimento de uma landing page focada em posicionamento digital, com estrutura
+                            organizada, hierarquia visual clara e foco em conversão. Projeto criado para aplicar
+                            conceitos de HTML, CSS e organização de conteúdo.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card-projeto">
+                    <img src="assets/exemplo2.png" alt="Exemplo Site Institucional">
+                    <div class="card-conteudo">
+                        <h3>Site Institucional Clínica de Saúde</h3><br>
+                        <p>Criação de um site institucional com foco em clareza de informações, experiência do usuário e
+                            apresentação de serviços. O projeto explora estrutura semântica, responsividade e boas
+                            práticas de layout.</p>
+                    </div>
+                </article>
+
+                <article class="card-projeto">
+                    <img src="assets/exemplo3.png" alt="Exemplo Consultoria Digital">
+                    <div class="card-conteudo">
+                        <h3>Apresentação Consultoria Digital</h3><br>
+                        <p>Projeto de página única desenvolvida para apresentar serviços de consultoria em comunicação e
+                            estratégia digital. Estrutura pensada para transmitir autoridade, organização e objetividade
+                            na comunicação.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="bloco container">
+            <h2>Solicite um orçamento</h2>
+            <p>Preencha o formulário abaixo:</p>
+
+            <div class="contato">
+                <form id="contactform">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" placeholder="Digite aqui seu nome" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Digite aqui seu e-mail" required>
+                    <label>Interesse:</label>
+                    <select id="opcao">
+                        <option value="frontend">Front-End</option>
+                        <option value="backend">Back-End</option>
+                        <option value="socialmedia">Social Media</option>
+                        <option value="design">Design</option>
+                    </select>
+                    <label for="mensagem">Digite sua mensagem:</label>
+                    <textarea id="mensagem" placeholder="Digite aqui sua mensagem" required></textarea><br>
+                    <button type="submit">Enviar</button>
+                </form>
+                <script src="script.js"></script>
+                <div class="agradecimento">
+                    <h2>Obrigada por dedicar seu tempo para entrar em contato!</h2><br>
+                    <p>Agradeço pela oportunidade de participar deste curso e desenvolver este projeto!<br><br>
+                        Este projeto marca uma etapa muito importante da minha jornada de aprendizado. Sou grata pela
+                        oportunidade de participar deste curso e por tudo o que ele proporcionou ao meu desenvolvimento.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>2026 - Portfólio da Mariana</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5d7c4;
+    color: #354024;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.topo {
+    position: sticky;
+    top: 0;
+    background: #354024;
+}
+
+.menu {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+
+.menu-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.menu-links a:hover {
+    background:#889063;
+}
+
+.bloco {
+    margin-top: 25px;
+    padding: 30px;
+    background-color: #e5d7c4;
+    border: #ffffff;
+    border-radius: 6px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+.sobre-conteudo {
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+
+.sobre-texto, .sobre-imagem {
+    flex:1;
+}
+
+.sobre-imagem img {
+    width:100%;
+    max-height:500px;
+    display:block;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #889063;
+    font-size: medium;
+    border: none;
+    border-radius: 6px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#habilidades {
+    background-color: #cfbb99;
+    height: auto;
+}
+
+.habilidades {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    flex:1;
+    flex-wrap: wrap;
+}
+
+.lista-habilidades {
+    flex:1;
+    margin-top: 10px;
+    padding-left: 18px;
+
+}
+
+.lista-habilidades li {
+    list-style: none;
+    border-bottom: solid 1px #88906366;
+    line-height: 2.2;
+
+}
+
+.grade-projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: white;
+    line-height: 1.7;
+}
+
+.card-projeto {
+    border-radius: 6px;
+    overflow: hidden;
+    background: #354024;
+    padding: 20px;
+}
+
+.card-projeto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.card-conteudo {
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.contato {
+    display: flex;
+    gap: 90px;
+    align-items: flex-start;
+}
+
+#contactform, .agradecimento {
+    flex:1;
+}
+
+#contactform label {
+    display:block;
+    font-size: medium;
+    font-weight: 500;
+    margin-top: 15px;
+    
+}
+
+#contactform button {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input, textarea {
+    background-color: #cfbb99;
+    width: 100%;
+    max-width: 500px;
+    height:40px;
+    border:none;
+    border-radius: 6px;
+    padding:8px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input::placeholder, textarea::placeholder
+{
+    color: #354024;
+    margin-right: 10px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.agradecimento {
+    text-align: left;
+    padding: 10px;
+}
+
+.rodape {
+    background-color: #354024;
+    text-align: center;
+    padding: 10px;
+    margin-top: 24px;
+    color: white;
+}
+
+@media (max-width: 860px) {
+    .grade-projetos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sobre-conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px 0;
+    }
+
+    .menu-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bloco {
+        padding: 20px;
+    }
+
+    .habilidades {
+    flex-direction: column;
+    gap: 16px;
+    }
+
+    .grade-projetos {
+        grid-template-columns: 1fr;
+    }
+    .contato {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    #contactform, .agradecimento { 
+        flex: 1;
+    }
+}
